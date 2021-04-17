@@ -1,0 +1,373 @@
+/* GENERAL */
+
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+
+body, html {
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */  
+
+header nav {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    background-color: #f3e7f1;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #f3e7f1;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+header a {
+    display: flex;
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+}
+
+header ul li {
+    display: flex;
+}
+
+header img {
+    display: flex;
+    max-width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigation li {
+    color:black;
+    list-style: none;
+}
+
+.navigation li a {
+    color:black;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 18px;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
+    color: #8f63e9;
+}
+
+/* CONTENU INDEX */
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 100%;
+    max-height: 50%;
+    flex-wrap: wrap;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+}
+
+.card {
+    width: 80%;
+    box-shadow: 0 0 10px #777;
+    border-radius:7px;
+    margin:20px;
+}
+
+h1 {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;}
+
+.description {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.bouton {
+    text-decoration: none;
+    display: flex;
+    width: 25%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    background: linear-gradient(150deg, #8779ff, #9356DC);
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    margin: 20px 0 20px 35%;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f3e7f1;
+    position: sticky; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FICHE PRODUIT */
+
+#containerproduct {
+    display: flex;
+    min-width:90% ;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:15px;
+}
+
+#containerproduct div {
+    width: 85%;
+    margin-left: 20px;
+}
+
+#containerproduct div h1 {
+    width: 100%;
+    font-size: 25px;
+}
+
+#containerproduct img{
+    display: flex;
+    border-radius: 20px;
+    min-width: 80%;
+}
+
+.prix {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#containerproduct select {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#containerproduct button {
+    font-size: 15px;
+    padding : 5px;
+}
+
+.addbutton {
+    text-decoration: none;
+    display: flex;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 27%;
+    border-radius: 50px;
+    background: linear-gradient(150deg, #8779ff, #9356DC);
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+/* Page panier */
+
+.panierglobal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 95%;
+}
+
+.panierglobal #containerpanier {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.panierglobal #containerpanier h2 {
+    display: flex;
+    width: 90%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panierglobal #tableauproduits {
+    display: flex;
+    margin: none;
+    padding: none;
+}
+
+.panierglobal .table {
+    width: 20%;
+    margin-left: 0;
+    padding: none;
+}
+
+.panierglobal thead {
+    width: 60%;
+    background-color : #f3e7f1;
+}
+
+.panierglobal th {
+    font-size: 12px;
+}
+
+.panierglobal .montant {
+    font-size: 20px;
+}
+
+.panierglobal .containerproduct button {
+    margin-left: 40%;
+}
+
+.panierglobal .panier-vide {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panierglobal #productlist {
+    border: none;
+}
+
+.panierglobal #formulaire {
+    width: 100%;
+    margin-left: 3%;
+}
+
+.montant {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.subtotal {
+    display: flex;
+}
+
+#formulaire form div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin : 25px 25px 25px 0;
+    font-size: 20px;
+}
+
+#formulaire h2 {
+    width: 100%;
+    margin-top : 20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#validbutton {
+    margin:25px 0 15px 25%;
+    padding: 10px;
+}
+
+#formulaire label {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-top: 2px;
+}
+
+#formulaire__nom {
+    padding-top: 18px;
+}
+
+input {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#missNom , #missPrenom , #missEmail , #missVille , #missAddress {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.fa-check {
+    color : green;
+}
+
+/*    FINALISATION COMMANDE    */
+
+.imgheader, .tdtotalCde {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+}
+
+.imgheader img {
+    display: flex;
+    height: 120px;
+    padding: 15px 0 0 0;
+    margin: none;
+}
+
+.imgheader h2 {
+    padding-top: 28px;
+    color : #9356DC;
+}
+
+table {
+    height: 80%;
+    padding-top: 5%;
+}
+.main {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.tdNcommande1 ,.tdNcommande2 ,.tdtotalCde2{
+    font-weight: bold;
+    color : #9356DC;
+    padding-right: 20px;
+}

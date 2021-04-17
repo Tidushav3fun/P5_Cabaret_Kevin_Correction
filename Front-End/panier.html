@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 740px)" href="mobilestyle.css" />
+    <link rel="stylesheet" media="screen and (min-width: 740px) and (max-width: 1240px)" href="tabstyle.css" /> 
+    <title>Panier</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo Orinoco"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" href="index.html" title="Accueil">Produits</a></li>
+                <li><a class="menu" href="panier.html" title="Panier">Panier <span class="nombreproduits"></span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="panierglobal">
+        <section id="containerpanier">
+            <h2>Mon Panier</h2>
+            <div id="tableauproduits">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Couleur</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productlist"></tbody>
+                </table>
+            </div>
+
+            <p class="montant">Sous total : <span class="subtotal"></span>€</p>
+        </section>
+
+        <section id="formulaire">
+            <h2>Formulaire de renseignement</h2>
+            <form action="confirmation.html" method="POST">
+                <div id="formulaire__nom">
+                    <label for='nom'>Nom</label>
+                    <input type='text' placeholder="DUPONT" name='nom' id="nomform" maxlength='20'
+                        pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required>
+                    <span id='missNom'></span><br>
+                </div>
+
+                <div id="formulaire__prenom">
+                    <label for='prenom'>Prénom</label>
+                    <input type='text' placeholder="Michel" name='prenom' id="prenom" maxlength='20'
+                        pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required>
+                    <span id="missPrenom"></span><br>
+                </div>
+
+                <div id="formulaire__email">
+                    <label for='mail'>E-mail</label>
+                    <input type='email' placeholder="michel.dupont@xxx.fr" name="mail" id="Email"
+                        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
+                    <span id='missEmail'></span>
+                </div>
+
+                <div id="formulaire__ville">
+                    <label for='ville'>Commune</label>
+                    <input type='text' placeholder="Paris" name='ville' id="Ville"
+                        pattern="/^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/" required>
+                    <span id='missVille'></span>
+                </div>
+
+                <div id="formulaire__address">
+                    <label for='address'>Adresse</label>
+                    <input type='text' placeholder="2 route Nationale" name='address' id="adresse"
+                        pattern="/^\d+\s[A-z]+\s[A-z]+/" required>
+                    <span id='missAddress'></span>
+                </div>
+            </form>
+    </div>
+    <input id="validbutton" type='submit' value='Valider la commande'>
+    </div>
+    </section>
+    </div>
+    <footer>
+        <p class="copyright">
+            © Cabaret Kévin Tous droits réservés
+        </p>
+    </footer>
+
+    <!--     MY SCRIPT FRONT    -->
+    <script src="common.js"></script>
+    <script src="panier.js"></script>
+    <script src="https://kit.fontawesome.com/f655d28013.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 740px)" href="mobilestyle.css" />
+    <link rel="stylesheet" media="screen and (min-width: 740px) and (max-width: 1240px)" href="tabstyle.css" /> 
+    <title>Commande finalisée - Orinoco</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo Orinoco"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" href="index.html" title="Accueil">Produits</a></li>
+                <li><a class="menu" href="panier.html" title="Panier">Panier <span class="nombreproduits"></span></a>
+            </ul>
+        </nav>
+    </header>
+
+    <table class="main">
+        <tr>
+            <td class="imgheader"> <img class="checkedcommande" src="https://img.icons8.com/carbon-copy/100/000000/checked-checkbox.png"
+                    alt="checked" /><br>
+                <h2> Merci pour votre commande ! </h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="txt">
+                <p> Vous trouverez ci-dessous le détail de votre commande. <br> A très bientôt sur Orinoco ! </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="Ncommande">
+                <table>
+                    <tr>
+                        <td class="tdNcommande1"> Numéro de Commande </td>
+                        <td id="orderId"> ####### </td>
+                    </tr>
+                    <tr>
+                        <td class="tdNcommande2"> Article<span id="nbrarticle"></span></td>
+                        <td class="totalCde"> 0.00€ </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdtotalCde">
+                <table>
+                    <tr>
+                        <td class="tdtotalCde2"> TOTAL   </td>
+                        <td class="totalCde"> 0.00€ </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <p class="copyright">
+            © Cabaret Kévin Tous droits réservés
+        </p>
+    </footer>
+
+    <!--     MY SCRIPT FRONT    -->
+    <script src="common.js"></script>
+    <script src="commande.js"></script>
+    <script src="https://kit.fontawesome.com/f655d28013.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
